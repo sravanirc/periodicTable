@@ -1,0 +1,95 @@
+/* styling the heading */
+h1{
+    background-color: brown;
+    color:blanchedalmond;
+     border-radius: 10em;
+     text-align: center;
+     padding:5vh 3vh;
+     font-family: 'Courier New', Courier, monospace;
+     font-style: italic;
+     margin: auto;
+     font-size: 2em;
+}
+
+h3{
+    color: black 0.8;
+    font-size: 1.5em;
+    margin-bottom: none;
+   }
+
+ul{
+   list-style-type: none;  
+   display: grid; /* a Grid display for all the elements with an even gap between rows and cols */
+   gap : 0.2em;
+   text-align: center;
+   width: 95%;  
+  
+}
+
+.row1, .row2, .row3{ /* The first 3 rows needs a space-between to align the sections .sec1 and .sec2 towards the ends */
+    display: flex;
+    justify-content: space-between;
+}
+
+.row4, .row5, .row6, .row7{
+    display: flex;
+    gap:0.2em;
+    justify-content: space-between;
+}
+
+.sec1, .sec2{
+    display: flex;
+    gap: 0.2em;
+}
+
+
+#actinoids, #lanthanoids{
+    display: flex;
+    gap: 0.2em;
+    justify-content: center;
+}
+
+/* Styled each element with a background color and set the width and height using relative units as Vw- viewport Width and vh- Viewpost height */
+ul li{
+    width: 4.5vw;  
+    height: 10vh;
+    border: 2px solid black;
+    background-color: aquamarine;
+    text-align: center;
+ }
+
+ ul a{
+    text-decoration: none;
+    color: black;
+ }
+
+ /* for larger screens more than 701pixels wide , the image is hidden so the elements can be displayed */
+
+ @media screen and (min-width : 701px){
+    img{
+        content-visibility: hidden;
+    }
+ }
+
+ /* for smaller screens less than 700 pixels wide , the elements are hidden and an image of periodic table is displayed */
+
+ @media screen and (max-width : 700px) {
+    h1{ 
+        /* changed the styling of heading to suit smaller screen */
+        background-color: green;
+   
+         border-radius: 4em;
+       
+         padding:3vh 5vw;
+
+         font-size: 1.5em;
+    }  
+    
+ img{ /* the image is visible when the screen width is less than 700 pixels */
+    margin-top: 3em;
+    width: 95vw;
+ }
+    ul {
+     content-visibility: hidden;
+    }
+ }
