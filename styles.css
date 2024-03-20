@@ -1,56 +1,73 @@
+*{
+  box-sizing: border-box;
+ }
+
 /* styling the heading */
-h1{
+ h1{
     background-color: brown;
     color:blanchedalmond;
-     border-radius: 10em;
-     text-align: center;
-     padding:5vh 3vh;
-     font-family: 'Courier New', Courier, monospace;
-     font-style: italic;
-     margin: auto;
-     font-size: 2em;
+    border-radius: 10em;
+    text-align: center;
+    padding:5vh 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 2em;
+    width: 95%;
+ 
 }
+main{
+    display: grid;     /* a Grid display for all the elements with an even gap between rows and cols */
+    width: 1vw;
+
+ }
 
 h3{
-    color: black 0.8;
+    color: rgba(0,0,0,0.6);
     font-size: 1.5em;
-    margin-bottom: none;
+ 
    }
 
-ul{
+
+ ul {
    list-style-type: none;  
-   display: grid; /* a Grid display for all the elements with an even gap between rows and cols */
-   gap : 0.2em;
-   text-align: center;
-   width: 95%;  
-  
+   margin: 0.1em;
 }
+
 
 .row1, .row2, .row3{ /* The first 3 rows needs a space-between to align the sections .sec1 and .sec2 towards the ends */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .row4, .row5, .row6, .row7{
     display: flex;
-    gap:0.2em;
-    justify-content: space-between;
+     gap:0.2em; 
+    justify-content: space-between; 
 }
 
 .sec1, .sec2{
     display: flex;
-    gap: 0.2em;
+  gap: 0.2em;  
+
+    
 }
 
+.sec1{
+       justify-content: start;
+}
+
+.sec2{
+    justify-content: end;
+}
 
 #actinoids, #lanthanoids{
     display: flex;
-    gap: 0.2em;
+     gap: 0.2em;
     justify-content: center;
 }
 
 /* Styled each element with a background color and set the width and height using relative units as Vw- viewport Width and vh- Viewpost height */
-ul li{
+ul li {
     width: 4.5vw;  
     height: 10vh;
     border: 2px solid black;
@@ -89,7 +106,7 @@ ul li{
     margin-top: 3em;
     width: 95vw;
  }
-    ul {
+    ul, h3 {
      content-visibility: hidden;
     }
  }
