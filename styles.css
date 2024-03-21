@@ -60,6 +60,10 @@ h3{
     justify-content: end;
 }
 
+.bottomRows{
+    display: flex;
+    justify-content: end;
+}
 #actinoids, #lanthanoids{
     display: flex;
      gap: 0.2em;
@@ -73,6 +77,7 @@ ul li {
     border: 2px solid black;
     background-color: aquamarine;
     text-align: center;
+    font-size: 0.8em;
  }
 
  ul a{
@@ -82,7 +87,7 @@ ul li {
 
  /* for larger screens more than 701pixels wide , the image is hidden so the elements can be displayed */
 
- @media screen and (min-width : 701px){
+ @media screen and (min-width : 1001px){
     img{
         content-visibility: hidden;
     }
@@ -90,7 +95,7 @@ ul li {
 
  /* for smaller screens less than 700 pixels wide , the elements are hidden and an image of periodic table is displayed */
 
- @media screen and (max-width : 700px) {
+ @media screen and (max-width : 1000px) {
     h1{ 
         /* changed the styling of heading to suit smaller screen */
         background-color: green;
